@@ -11,18 +11,36 @@ body{
    justify-content: center;
 }
 .container{
-width: 400px;
-border-color: whitesmoke;
-padding: 70px 40px;
+width: 500px;
+border-color: rgb(168, 206, 16);
+padding: 90px 40px;
 border: radius 8px;
 display: flex;
-box-shadow: 0 20px 25px rgb(4, 7, 118) ; 
+box-shadow: 0 20px 25px rgb(51, 12, 130) ; 
 justify-content: space-between;
 background-color: rgb(208, 27, 142);
+margin: 30px,40px;
 }
 
 .cl{
-   width: 45%;
+   width: 500px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.cf{
+   width: 75%;
+   height:70px;
+   margin-left: 10px;
+   margin-right: 10px;
+   outline: none;
+
+}
+.result{
+   width: 500px;
+   height:60px;
+   margin-left: 10px;
+   margin-right: 10px;
+   outline: none;
 }
 input{
    width: 100%;
@@ -32,6 +50,7 @@ input{
 }
 .fh{
    width: 45%;
+   /* margin-top: 10px; */
 }
 input{
    width: 100%;
@@ -39,10 +58,12 @@ input{
    outline: none;
 }
 .btn1{
-   width: 30%;
-   height:30%;
+   width: 350px;
+   height:30px;
    outline: none;
    cursor: pointer;
-   background-color: rgb(169, 213, 35);
+   background-color: rgb(21, 148, 183);
    border: none;
+   margin-top: 20px;
+   margin-left: 10px;
 }
