@@ -11,14 +11,14 @@ body{
    justify-content: center;
 }
 .container{
-width: 500px;
-border-color: rgb(168, 206, 16);
-padding: 90px 40px;
+width: 450px;
+border-color: rgb(190, 52, 42);
+padding: 80px 40px;
 border: radius 8px;
 display: flex;
-box-shadow: 0 20px 25px rgb(51, 12, 130) ; 
+box-shadow: 0 20px 25px rgb(245, 244, 243) ; 
 justify-content: space-between;
-background-color: rgb(208, 27, 142);
+background-color: rgb(40, 201, 201);
 margin: 30px,40px;
 }
 
@@ -62,8 +62,10 @@ input{
    height:30px;
    outline: none;
    cursor: pointer;
-   background-color: rgb(21, 148, 183);
+   background-color: rgb(30, 37, 167);
    border: none;
    margin-top: 20px;
    margin-left: 10px;
+   border-radius: 30px;
+   color: rgb(233, 230, 224);
 }

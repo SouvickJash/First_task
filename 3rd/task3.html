@@ -22,23 +22,26 @@
       }
    </script> -->
 
+   <script language="javascript">
+      function gettemperature() {
+         var inputtext = parseInt(document.getElementById('stringVal').value);
+         var temperatureoption = document.getElementById('temperature').value;
+         //alert(temperatureoption);
+         if (temperatureoption == 'Fahrenheit') {
+            var a = (inputtext - 32) / 1.8;
+            //alert(a);
+            document.getElementById("result").value = a;
+         } else {
+            var b = (inputtext * 1.8) + 32;
+            document.getElementById("result").value = b;
+            //alert(b);
+         }
+      }
 
+   </script>
 </head>
 
 <body>
-
-   <!-- Degree: &nbsp;&nbsp;&nbsp;
-   <input type="text" id="f1"><br>
-
-   Degrees-<input type="text" id="f1"><br><br>
-   Type-
-   <select id="cf">
-      <option value="f" id="f">Fahrenheit</option>
-      <option value="c" id="c">Celcious</option><br>
-   </select><br><br>
-   Result-<input type="text" id="r" name="result"><br><br>
-   <input type="submit" value="submit" onclick="demo()"> -->
-
 
 
    <div class="container">
@@ -46,7 +49,7 @@
          <level for="d">
             <h4>Degrees</h4>
          </level>
-         <input type="number" id="cl">
+         <input type="number" id="stringVal">
       </div>
 
       <div class="fh">
@@ -54,9 +57,9 @@
          <level>
             <h4>Temperature</h4>
          </level>
-         <select id="cf">
-            <option value="f" id="f">Fahrenheit</option>
-            <option value="c" id="c">Celcious</option><br>
+         <select id="temperature">
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Celsius">Celcious</option><br>
          </select><br><br>
          <!-- <input type="number" id="fh"> -->
       </div>
@@ -65,16 +68,11 @@
          <level for="result">
             <h4>Result</h4>
          </level>
-         <input type="number" id="rs">
+         <input type="number" id="result">
       </div>
-      <button class="btn1">
+      <button class="btn1" onclick="gettemperature()">
          <h5>SUBMIT</h5>
       </button>
    </div>
-
-
-
-
 </body>
-
 </html>
